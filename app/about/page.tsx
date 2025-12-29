@@ -2,13 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Download } from 'lucide-react';
-
+import { Download } from "lucide-react";
 
 export default function AboutAll() {
   return (
     <section className="relative min-h-screen w-full bg-black text-white px-6 md:px-12 py-20 space-y-28 overflow-hidden">
-
       {/* Grid Pattern Overlay */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -37,18 +35,27 @@ export default function AboutAll() {
             className="text-4xl md:text-5xl font-bold mb-4 headings"
             style={{
               WebkitTextStroke: "1px rgba(255,255,255,0.4)",
-              color: "#fff"
+              color: "#fff",
             }}
           >
             MERN Full Stack Developer
           </h2>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            I’m <span className="text-white font-semibold">Mohammed Shanif</span>,
+            I’m{" "}
+            <span className="text-white font-semibold">Mohammed Shanif</span>,
             engineering full-stack web applications with scalable backend logic
             and performance-focused UI using the MERN ecosystem.
           </p>
-          <button className="px-5 py-3 bg-white text-black hover:bg-black hover:text-white transform duration-300 rounded-3xl cursor-pointer mt-5 md:mt-4 flex flex-row justify-center items-center gap-3" >Download Resume <Download size={18}/> </button>
+          <a
+            href="https://drive.google.com/file/d/1dvVebOis2a12k_xF2DOfJHbAEn6nGn3a/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-5 py-3 bg-white text-black hover:bg-black hover:text-white transform duration-300 rounded-3xl cursor-pointer mt-5 md:mt-4 flex flex-row justify-center items-center gap-3">
+              Download Resume <Download size={18} />
+            </button>
+          </a>
         </motion.div>
       </section>
 
@@ -57,21 +64,39 @@ export default function AboutAll() {
         <h2 className="text-3xl md:text-4xl font-semibold mb-10">Skills</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
-          <SkillCard title="Frontend Development" skills={[
-            "JavaScript", "React.js", "Next.js", "Redux", "Tailwind CSS", "Bootstrap"
-          ]} />
+          <SkillCard
+            title="Frontend Development"
+            skills={[
+              "JavaScript",
+              "React.js",
+              "Next.js",
+              "Redux",
+              "Tailwind CSS",
+              "Bootstrap",
+            ]}
+          />
 
-          <SkillCard title="Backend Development" skills={[
-            "Node.js", "Express.js", "RESTful APIs", "JWT", "OAuth"
-          ]} />
+          <SkillCard
+            title="Backend Development"
+            skills={["Node.js", "Express.js", "RESTful APIs", "JWT", "OAuth"]}
+          />
 
-          <SkillCard title="Databases" skills={[
-            "MongoDB", "Mongoose", "PostgreSQL"
-          ]} />
+          <SkillCard
+            title="Databases"
+            skills={["MongoDB", "Mongoose", "PostgreSQL"]}
+          />
 
-          <SkillCard title="Tools & Platforms" skills={[
-            "GitHub", "Postman", "Vercel", "Render", "Razorpay", "Stripe"
-          ]} />
+          <SkillCard
+            title="Tools & Platforms"
+            skills={[
+              "GitHub",
+              "Postman",
+              "Vercel",
+              "Render",
+              "Razorpay",
+              "Stripe",
+            ]}
+          />
         </div>
       </section>
 
@@ -109,11 +134,9 @@ export default function AboutAll() {
           />
         </div>
       </section>
-
     </section>
   );
 }
-
 
 // 🧩 Sub Components (unchanged)
 const SkillCard = ({ title, skills }: any) => (
@@ -121,7 +144,7 @@ const SkillCard = ({ title, skills }: any) => (
     <h3 className="text-xl font-semibold mb-4 headings">{title}</h3>
     <ul className="space-y-2 text-gray-300">
       {skills.map((skill: string) => (
-        <li  key={skill}>• {skill}</li>
+        <li key={skill}>• {skill}</li>
       ))}
     </ul>
   </div>
