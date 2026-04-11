@@ -332,7 +332,7 @@ export default function ContactPage() {
 
         <div className="mt-10 text-gray-300 space-y-1">
           <p className="flex gap-2 items-center">
-            <MapPin size={16} /> Calicut, Kerala, India
+            <MapPin size={16} /> Malappuram, Kerala, India
           </p>
           <p className="flex gap-2 items-center">
             <Mail size={16} /> mohammedshanifcc@gmail.com

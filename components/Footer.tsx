@@ -55,7 +55,7 @@ export const Footer = () => {
 
         {/* Bottom Text */}
         <p className="text-xs text-gray-500">
-          © {new Date().getFullYear()} Shanif. All Rights Reserved.
+          © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Shanif. All Rights Reserved.
         </p>
       </div>
     </footer>

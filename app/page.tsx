@@ -74,8 +74,8 @@ export default function Home() {
           transition={{ delay: 0.7, duration: 1 }}
           className="mt-4 max-w-2xl text-center text-gray-300 text-lg md:text-2xl"
         >
-          MERN Full Stack Developer Creating scalable backend logic & intuitive
-          user experiences with modern engineering practices.
+          Full-Stack MERN Developer specializing in scalable backend logic and
+          intuitive user experiences with 1.5+ years of professional experience.
         </motion.p>
 
         <motion.div

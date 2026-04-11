@@ -19,7 +19,7 @@ export default function AboutAll() {
       {/* =========== ABOUT SECTION =========== */}
       <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <motion.img
-          src="/profile.jpg"
+          src="https://res.cloudinary.com/dvj3mphwu/image/upload/v1775796235/20260307_155651.jpg_zht52q.jpg"
           alt="Profile"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -43,18 +43,19 @@ export default function AboutAll() {
 
           <p className="text-gray-300 text-lg leading-relaxed">
             I’m{" "}
-            <span className="text-white font-semibold">Mohammed Shanif</span>,
-            engineering full-stack web applications with scalable backend logic
-            and performance-focused UI using the MERN ecosystem.
+            <span className="text-white font-semibold">Mohammed Shanif</span>, a
+            Full-Stack MERN Developer with 1.5+ years of experience across
+            internship, freelance, and corporate environments. I specialize in
+            engineering scalable web applications and performance-focused UI
+            using the modern MERN ecosystem.
           </p>
           <a
-            href="https://drive.google.com/file/d/1dvVebOis2a12k_xF2DOfJHbAEn6nGn3a/view?usp=sharing"
+            href="https://drive.google.com/file/d/1kurASaXQwwCL6Ol3cm9vjEBl3ZtPeXJq/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-5 py-3 bg-white text-black hover:bg-black hover:text-white transform duration-300 rounded-3xl cursor-pointer mt-5 md:mt-4 flex w-fit justify-center items-center gap-3"
           >
-            <button className="px-5 py-3 bg-white text-black hover:bg-black hover:text-white transform duration-300 rounded-3xl cursor-pointer mt-5 md:mt-4 flex flex-row justify-center items-center gap-3">
-              Download Resume <Download size={18} />
-            </button>
+            Download Resume <Download size={18} />
           </a>
         </motion.div>
       </section>
@@ -97,6 +98,16 @@ export default function AboutAll() {
               "Stripe",
             ]}
           />
+
+          <SkillCard
+            title="Methodologies & Soft Skills"
+            skills={[
+              "Agile Methodologies",
+              "Project Management",
+              "Communication",
+              "Team Collaboration",
+            ]}
+          />
         </div>
       </section>
 
@@ -106,14 +117,19 @@ export default function AboutAll() {
 
         <div className="relative border-l-2 border-white/20 pl-6 space-y-12">
           <TimelineItem
-            title="Intern — MERN Developer"
-            year="2024 - Present"
-            desc="Building deployed MERN applications following Agile methods."
+            title="Full Stack Developer — TrigAds Digital Solutions"
+            year="1/2026 - Present"
+            desc="Developing 4+ full-stack applications with Next.js, building scalable APIs, and optimizing MongoDB schemas for high performance."
           />
           <TimelineItem
             title="Freelance Web Developer"
-            year="2025 - Present"
-            desc="Developing business projects with secure authentication and admin dashboards."
+            year="2026 - Present"
+            desc="Deploying MERN stack applications with focus on pixel-perfect Figma-to-UI conversion and system efficiency."
+          />
+          <TimelineItem
+            title="Intern — Bridgeon Solutions LLP"
+            year="2024 - 11/2025"
+            desc="Developed 3+ MERN stack applications through project-based learning, focusing on cross-device compatibility and structured data handling."
           />
         </div>
       </section>
@@ -124,13 +140,14 @@ export default function AboutAll() {
 
         <div className="space-y-6 max-w-2xl">
           <EduCard
-            course="Full Stack MERN Development — Self Learning"
-            year="2023 - Present"
+            course="BCA (Bachelor of Computer Applications)"
+            year="2025 - Present"
+            place="IGNOU (Ongoing)"
           />
           <EduCard
-            course="Higher Secondary Education (Science)"
-            year="2021 - 2023"
-            place="Kerala, India"
+            course="Higher Secondary Education (Biology Science)"
+            year="2022 - 2024"
+            place="GHSS Vazhkkad, Kerala"
           />
         </div>
       </section>
@@ -151,8 +168,8 @@ const SkillCard = ({ title, skills }: any) => (
 );
 
 const TimelineItem = ({ title, year, desc }: any) => (
-  <div>
-    <div className="absolute -left-3 w-3 h-3 bg-blue-500 rounded-full border border-black"></div>
+  <div className="relative">
+    <div className="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-blue-500 rounded-full border-2 border-black"></div>
     <h3 className="text-xl font-semibold headings">{title}</h3>
     <p className="text-gray-400 text-sm">{year}</p>
     <p className="text-gray-300 mt-2">{desc}</p>
