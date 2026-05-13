@@ -20,6 +20,18 @@ const projects = [
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775810294/Screenshot_2026-04-10_140611_dustwh.png",
   },
   {
+    title: "MHM Hindi Club - Smart Hindi Learning Platform",
+
+    desc: "An interactive Hindi learning platform for students of classes 5–7 featuring Varnamala practice, smart dictionary, AI mentor, exams, textbook PDFs, handwriting practice, and teacher/admin management system.",
+
+    tech: ["Next.js", "Node.js", "Express", "Firebase"],
+
+    demo: "#",
+    github: "#",
+
+    img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1778663004/ChatGPT_Image_May_13_2026_02_33_07_PM_ck7xpc.png",
+  },
+  {
     title: "E-Commerce Platform | MERN Stack",
     desc: "Built a full-stack e-commerce platform with secure authentication and role-based authorization using JWT. Designed a COD checkout flow with order tracking and developed a responsive UI with an admin dashboard supporting complete CRUD operations for product and order management.",
     tech: ["Next.js", "Node.js", "Express.js", "Firebase", "JWT"],
