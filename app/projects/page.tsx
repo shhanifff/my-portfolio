@@ -26,7 +26,7 @@ const projects = [
 
     tech: ["Next.js", "Node.js", "Express", "Firebase"],
 
-    demo: "#",
+    demo: "https://yourhindiclub.com/",
     github: "#",
 
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1778663004/ChatGPT_Image_May_13_2026_02_33_07_PM_ck7xpc.png",
@@ -35,7 +35,7 @@ const projects = [
     title: "E-Commerce Platform | MERN Stack",
     desc: "Built a full-stack e-commerce platform with secure authentication and role-based authorization using JWT. Designed a COD checkout flow with order tracking and developed a responsive UI with an admin dashboard supporting complete CRUD operations for product and order management.",
     tech: ["Next.js", "Node.js", "Express.js", "Firebase", "JWT"],
-    demo: "",
+    demo: "https://topnotch-two.vercel.app/",
     github: "",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775815686/Screenshot_2026-04-10_153741_tf4bln.png",
   },
@@ -51,7 +51,7 @@ const projects = [
     title: "Reemdates - Product Showcase Platform",
     desc: "Designed a product showcase platform focused on lead conversion, enabling users to browse products and place orders directly via WhatsApp. Implemented pre-filled messaging flow to reduce user friction and improve ordering efficiency.",
     tech: ["Next.js", "Firebase", "Node.js", "Express"],
-    demo: "",
+    demo: "https://reemdates.in/",
     github: "",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775816311/Screenshot_2026-04-10_154643_eimvw1.png",
   },
