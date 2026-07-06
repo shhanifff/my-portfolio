@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Github, Linkedin, Instagram } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import React from "react";
 
 export const Footer = () => {
@@ -41,13 +41,7 @@ export const Footer = () => {
             <Mail size={24} />
           </a>
 
-          <a
-            href="https://instagram.com/shhanifff"
-            target="_blank"
-            className="hover:text-white transition transform hover:scale-110"
-          >
-            <Instagram size={24} />
-          </a>
+
         </div>
 
         {/* Divider */}

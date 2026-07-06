@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Ancraze - Learning Platform",
     desc: "Developed backend architecture for a learning platform handling user management, course access, and enrollment workflows. Implemented manual payment verification and structured onboarding flow. Built admin and trainer modules for managing students, assigning tasks, and tracking progress using a WhatsApp-based communication system.",
-    tech: ["Node.js", "Express", "MongoDB"],
+    tech: ["Node.js", "Express", "MongoDB", "Firebase", "Notification System"],
     demo: "",
     github: "",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775810294/Screenshot_2026-04-10_140611_dustwh.png",
@@ -24,7 +24,14 @@ const projects = [
 
     desc: "An interactive Hindi learning platform for students of classes 5–7 featuring Varnamala practice, smart dictionary, AI mentor, exams, textbook PDFs, handwriting practice, and teacher/admin management system.",
 
-    tech: ["Next.js", "Node.js", "Express", "Firebase"],
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "Firebase",
+      "Cloudinary",
+      "Gemini API",
+    ],
 
     demo: "https://yourhindiclub.com/",
     github: "#",
@@ -32,9 +39,31 @@ const projects = [
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1778663004/ChatGPT_Image_May_13_2026_02_33_07_PM_ck7xpc.png",
   },
   {
+    title: "Adbell Calicut - Chips Showcase & Landing Platform",
+    desc: "A premium, conversion-focused business landing website showcasing the product catalog, company details, and the traditional chips manufacturing process with fluid, interactive sections.",
+    tech: [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Responsive Design",
+    ],
+    demo: "https://www.adbellcalicut.com/",
+    github: "",
+    img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1783311160/Screenshot_2026-07-05_125613_dymt82.png",
+  },
+  {
     title: "E-Commerce Platform | MERN Stack",
     desc: "Built a full-stack e-commerce platform with secure authentication and role-based authorization using JWT. Designed a COD checkout flow with order tracking and developed a responsive UI with an admin dashboard supporting complete CRUD operations for product and order management.",
-    tech: ["Next.js", "Node.js", "Express.js", "Firebase", "JWT"],
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "JWT",
+      "Framer Motion",
+      "Responsive Design",
+    ],
     demo: "https://topnotch-two.vercel.app/",
     github: "",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775815686/Screenshot_2026-04-10_153741_tf4bln.png",
@@ -42,7 +71,16 @@ const projects = [
   {
     title: "ZENT - E-Commerce Platform",
     desc: "Developed a full-stack MERN e-commerce application with secure authentication, admin product management, and integrated online payments using Razorpay. Focused on building a scalable architecture and smooth checkout experience.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Razorpay"],
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Razorpay",
+      "Framer Motion",
+      "Responsive Design",
+      "Cloudinary",
+    ],
     demo: "https://zent-client.vercel.app/",
     github: "https://github.com/shhanifff/ZENT-client",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1766385835/Zent_igdacq.png",
@@ -50,7 +88,14 @@ const projects = [
   {
     title: "Reemdates - Product Showcase Platform",
     desc: "Designed a product showcase platform focused on lead conversion, enabling users to browse products and place orders directly via WhatsApp. Implemented pre-filled messaging flow to reduce user friction and improve ordering efficiency.",
-    tech: ["Next.js", "Firebase", "Node.js", "Express"],
+    tech: [
+      "Next.js",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "Framer Motion",
+      "Responsive Design",
+    ],
     demo: "https://reemdates.in/",
     github: "",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775816311/Screenshot_2026-04-10_154643_eimvw1.png",
@@ -58,7 +103,7 @@ const projects = [
   {
     title: "Softell - Product Showcase & Conversion Platform",
     desc: "Developed a conversion-focused product showcase platform for a car cup holder tissue product. Engineered a seamless user journey from product discovery to WhatsApp-based ordering with pre-filled messages. Optimized images for faster load performance and integrated smooth UI animations to improve engagement and product visibility. Built scalable backend APIs for product management.",
-    tech: ["React.js", "MongoDB", "Node.js", "Express"],
+    tech: ["React.js", "MongoDB", "Node.js", "Express", "Cloudinary"],
     demo: "",
     github: "",
     img: "https://res.cloudinary.com/dvj3mphwu/image/upload/v1775879794/Screenshot_2026-04-11_092450_p4ouu4.png",
@@ -75,6 +120,7 @@ const projects = [
       "Tailwind CSS",
       "RTK Query",
       "Stripe",
+      "Cloudinary",
     ],
     demo: "#",
     github: "https://github.com/eestate/eestate/tree/dev",
@@ -92,6 +138,7 @@ const projects = [
       "Tailwind CSS",
       "Context API",
       "Razorpay",
+      "Cloudinary",
     ],
     demo: "https://ticketa-frontend.vercel.app/",
     github: "https://github.com/shhanifff/ticketa-Event-Mangment",
@@ -124,22 +171,24 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.1 }}
-            className="rounded-2xl overflow-hidden border border-white/10 bg-white/5 shadow-lg hover:shadow-2xl transition"
+            className="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 shadow-lg hover:shadow-2xl hover:border-white/20 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full"
           >
             {/* Image full width focus */}
-            <img
-              src={project.img}
-              alt={project.title}
-              className="w-full h-56 md:h-52 object-cover"
-            />
+            <div className="overflow-hidden h-56 md:h-52 w-full">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+              />
+            </div>
 
             {/* Content */}
-            <div className="p-6 flex flex-col">
+            <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-lg font-bold text-white headings">
                 {project.title}
               </h3>
 
-              <p className="mt-2 text-gray-400 text-sm leading-relaxed">
+              <p className="mt-2 text-gray-300 text-sm leading-relaxed">
                 {project.desc}
               </p>
 
@@ -156,24 +205,40 @@ export default function ProjectsPage() {
               </div>
 
               {/* Actions */}
-              <div className="flex justify-between items-center mt-6">
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  className="text-xs flex items-center gap-2 text-gray-300 hover:text-white transition"
-                >
-                  Live Demo
-                  <ExternalLink size={16} />
-                </a>
+              <div className="flex justify-between items-center mt-auto pt-6">
+                {project.demo && project.demo !== "#" ? (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs flex items-center gap-2 text-gray-300 hover:text-white transition"
+                  >
+                    Live
+                    <ExternalLink size={16} />
+                  </a>
+                ) : (
+                  <span className="text-xs flex items-center gap-2 text-gray-600 cursor-not-allowed">
+                    Live
+                    <ExternalLink size={16} className="opacity-50" />
+                  </span>
+                )}
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="text-xs flex items-center gap-2 text-gray-300 hover:text-white transition"
-                >
-                  Code
-                  <Github size={16} />
-                </a>
+                {project.github && project.github !== "#" ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs flex items-center gap-2 text-gray-300 hover:text-white transition"
+                  >
+                    Code
+                    <Github size={16} />
+                  </a>
+                ) : (
+                  <span className="text-xs flex items-center gap-2 text-gray-600 cursor-not-allowed">
+                    Private Code
+                    <Github size={16} className="opacity-50" />
+                  </span>
+                )}
               </div>
             </div>
           </motion.div>

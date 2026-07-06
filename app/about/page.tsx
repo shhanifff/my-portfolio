@@ -50,7 +50,7 @@ export default function AboutAll() {
             using the modern MERN ecosystem.
           </p>
           <a
-            href="https://drive.google.com/file/d/1kurASaXQwwCL6Ol3cm9vjEBl3ZtPeXJq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1F0fJHQKVnFKcH5x1Hyan72bJrZGbZ-1R/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-3 bg-white text-black hover:bg-black hover:text-white transform duration-300 rounded-3xl cursor-pointer mt-5 md:mt-4 flex w-fit justify-center items-center gap-3"
@@ -68,44 +68,42 @@ export default function AboutAll() {
           <SkillCard
             title="Frontend Development"
             skills={[
-              "JavaScript",
+              "JavaScript (ES6+)",
+              "TypeScript",
               "React.js",
               "Next.js",
-              "Redux",
+              "Redux Toolkit",
               "Tailwind CSS",
-              "Bootstrap",
+              "HTML5 & CSS3",
             ]}
           />
 
           <SkillCard
             title="Backend Development"
-            skills={["Node.js", "Express.js", "RESTful APIs", "JWT", "OAuth"]}
-          />
-
-          <SkillCard
-            title="Databases"
-            skills={["MongoDB", "Mongoose", "PostgreSQL"]}
-          />
-
-          <SkillCard
-            title="Tools & Platforms"
             skills={[
-              "GitHub",
-              "Postman",
-              "Vercel",
-              "Render",
-              "Razorpay",
-              "Stripe",
+              "Node.js",
+              "Express.js",
+              "RESTful API Development",
+              "JWT Authentication",
+              "OAuth",
+              "MVC Architecture",
             ]}
           />
 
           <SkillCard
-            title="Methodologies & Soft Skills"
+            title="Database & Tools"
+            skills={["MongoDB", "Mongoose", "Git & GitHub", "Postman"]}
+          />
+
+          <SkillCard
+            title="Deployment & Practices"
             skills={[
-              "Agile Methodologies",
-              "Project Management",
-              "Communication",
-              "Team Collaboration",
+              "Vercel & Render",
+              "Razorpay & Stripe",
+              "Responsive Web Design",
+              "API Integration",
+              "Agile & Scrum",
+              "AI-Assisted Development",
             ]}
           />
         </div>
@@ -118,8 +116,8 @@ export default function AboutAll() {
         <div className="relative border-l-2 border-white/20 pl-6 space-y-12">
           <TimelineItem
             title="Full Stack Developer — TrigAds Digital Solutions"
-            year="1/2026 - Present"
-            desc="Developing 4+ full-stack applications with Next.js, building scalable APIs, and optimizing MongoDB schemas for high performance."
+            year="Jan - July 2026"
+            desc="Successfully engineered and delivered 4+ production-ready full-stack applications using Next.js. Architected scalable RESTful APIs, optimized complex MongoDB queries and schemas for peak performance, and integrated secure authentication and third-party services."
           />
           <TimelineItem
             title="Freelance Web Developer"

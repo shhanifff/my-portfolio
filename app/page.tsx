@@ -89,17 +89,25 @@ export default function Home() {
           className="flex flex-wrap justify-center gap-3 mt-8"
         >
           {[
-            "MongoDB",
-            "Express.js",
+            "JavaScript (ES6+)",
+            "TypeScript",
             "React.js",
-            "Node.js",
             "Next.js",
-            "REST APIs",
-            "JWT Authentication",
-            "UI Engineering",
-            "Responsive Design",
+            "Redux Toolkit",
             "Tailwind CSS",
-            "Performance Optimization",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Mongoose",
+            "RESTful APIs",
+            "JWT & OAuth",
+            "Razorpay & Stripe",
+            "Git & GitHub",
+            "Postman",
+            "Vercel & Render",
+            "Responsive Design",
+            "Agile & Scrum",
+            "AI-Assisted Dev",
           ].map((tag) => (
             <motion.span
               key={tag}
