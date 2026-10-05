@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
-    title: "Max Value Credits and Investment",
+    title: "Max Value Credits & Investment",
     desc: "Built a dynamic backend architecture with career and branching options, including complete CRUD capabilities. Implemented seamless image uploading via Cloudinary and successfully hosted the application on cPanel.",
     tech: ["Node.js", "Express", "Cloudinary", "cPanel"],
     demo: "https://maxvaluecredits.com/",
